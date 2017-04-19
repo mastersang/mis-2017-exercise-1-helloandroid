@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rltMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="buw.sangnguyenminh_118031.MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txtURL"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.70"
+                android:ems="10"
+                android:hint="Enter URL here"
+                android:inputType="textUri"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColorLink="@color/colorPrimary"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.30"
+                android:background="@android:color/holo_green_dark"
+                android:onClick="onClick"
+                android:text="Connect"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imgLoading"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20px"
+            android:visibility="invisible" />
+
+        <TabHost
+            android:id="@+id/thtResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-40dp"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnPlain"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.33"
+                        android:onClick="onClick"
+                        android:text="Plain Text" />
+
+                    <Button
+                        android:id="@+id/btnHTML"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.33"
+                        android:onClick="onClick"
+                        android:text="HTML" />
+
+                    <Button
+                        android:id="@+id/btnImage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.33"
+                        android:onClick="onClick"
+                        android:text="Image" />
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <ScrollView
+                        android:id="@+id/svwText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fillViewport="true"
+                        android:scrollbars="vertical">
+
+                        <TextView
+                            android:id="@+id/tvwResult"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </ScrollView>
+
+                    <ScrollView
+                        android:id="@+id/svwImage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fillViewport="true"
+                        android:scrollbars="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgResult"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </ScrollView>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+
+</RelativeLayout>
