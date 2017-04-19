@@ -1,0 +1,11 @@
+1. 	Reading content of a URL: https://docs.oracle.com/javase/tutorial/networking/urls/readingURL.html
+2.	Geting HTTP response code from a URL: http://stackoverflow.com/questions/6467848/how-to-get-http-response-code-for-a-url-in-java
+3.	Library for showing a GIF image: https://github.com/koral--/android-gif-drawable
+4.	Making a TextView scrollable: http://stackoverflow.com/questions/1748977/making-textview-scrollable-in-android
+5.	Greying out a button: http://stackoverflow.com/questions/8743120/how-to-grey-out-a-button
+6.	Showing HTML in a TextView: http://stackoverflow.com/questions/2116162/how-to-display-html-in-textview
+7.	Getting extension of a file: http://stackoverflow.com/questions/3571223/how-do-i-get-the-file-extension-of-a-file-in-java
+8.	Downloading image from URL: http://stackoverflow.com/questions/5882005/how-to-download-image-from-any-web-page-in-java
+9.	Checking if image is valid: http://stackoverflow.com/questions/13760269/android-how-to-check-if-file-is-image
+10. Clearing an ImageView: http://stackoverflow.com/questions/2859212/how-to-clear-an-imageview-in-android
+11.	Counting number of occurrences of a character in a string: http://stackoverflow.com/questions/275944/java-how-do-i-count-the-number-of-occurrences-of-a-char-in-a-string
